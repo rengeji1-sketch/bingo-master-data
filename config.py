@@ -7,7 +7,12 @@ VERSION = "1.0.1"
 # --- システム基本設定 ---
 GAME_MODE = "LAST_SPURT"  # "REALTIME"（即時反映） または "LAST_SPURT"（最後に一括）
 TEAM_COUNT = 2          # 参加チーム数
-BOARD_SIZE = 5          # 5x5のビンゴ
+
+# --- ゲームの基本ルール設定 ---
+BOARD_SIZE = 5         # ビンゴの1辺の長さ、5×5のビンゴ
+GAUGE_MAX = 100        # 攻撃ゲージが満タンになる値
+POINT_PER_HIT = 10     # 1マス埋まるごとのゲージ加算量
+POINT_PER_BINGO = 50   # ビンゴ1列ごとのボーナス加算量
 # 
 # 素材データベース
 # ID: {名前, タイプ}
